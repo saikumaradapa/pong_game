@@ -1,3 +1,5 @@
+# pong_game.py
+
 import pygame, sys
 
 clock = pygame.time.Clock()
