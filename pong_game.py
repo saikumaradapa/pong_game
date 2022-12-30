@@ -2,7 +2,9 @@
 
 import pygame, sys
 
+# initialization
 clock = pygame.time.Clock()
+pygame.init()
 
 class Ball :
     def __init__(self, screen, color, posX, posY, radius) :
@@ -14,7 +16,6 @@ class Ball :
         self.dx = 0
         self.dy = 0
         self.show()
-
 
     def show (self) :
         pygame.draw.circle(self.screen, self.color, (self.posX, self.posY), self.radius)
@@ -123,7 +124,6 @@ class CollisionManager :
     def check_goal_player2(self, ball):
         return ball.posX + ball.radius <= 0
 
-pygame.init()
 
 
 
